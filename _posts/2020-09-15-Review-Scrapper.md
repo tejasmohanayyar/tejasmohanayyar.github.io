@@ -78,4 +78,10 @@ permalink: "review-scrapper"
 * Run **git remote** -v to establish connection.
 * Run **git push heroku master**
 
+### Limitation of this deployed version
+
+* The deployed version of this project cannot scrap more than 2 pages of reviews.
+* The reason behind this is that Heroku needs a request to be sent back to it within 30s which my code cannot do beyond 2 pages.
+* A workaround is to use background requests to bypass this problem as per my understanding.
+
 Thank You for reading this post. If this post helped you out in anyway reach out to me on twitter and let me know! Thanks.
