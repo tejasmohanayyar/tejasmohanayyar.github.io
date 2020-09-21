@@ -1,0 +1,40 @@
+@media only screen and (max-width: 800px)
+{ 
+    #image-properties{
+
+    display: block;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 10px;
+    height: auto;
+    
+    
+    }
+
+    #left{
+        
+        width:100%;
+        height: auto;
+        position: relative;
+        
+        
+       }
+       
+       #right{ 
+        
+        width:100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: 10px;
+      
+        
+       }
+       .content{
+        text-align: justify;
+        margin-top: 0px;
+        
+    
+    }
+
+   
+}

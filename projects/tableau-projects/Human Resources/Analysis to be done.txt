@@ -1,0 +1,11 @@
+- Create a Histogram to find the Employee Statisfaction level
+
+- Create a Histogram to find the Employee Monthly Hours Distribution Level
+
+- Employee Department Wise Distribution
+
+- FInd the Employee Project Count Turnover Distribution
+
+- Find the Employee turnover depending on years worked distribution
+
+Create a Dashboard to using the above visuals 

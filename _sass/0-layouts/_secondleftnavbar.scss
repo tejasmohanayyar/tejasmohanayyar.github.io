@@ -1,0 +1,24 @@
+.sleftnavbar {
+
+    position: sticky;
+    text-align: center;
+    padding: 7px;
+    
+ 
+}    
+
+.sleftnavbar a {
+    
+    font-weight: bold;
+    color: whitesmoke;
+    padding-right: 10px;
+    
+}
+
+.sleftnavbar a:hover {
+
+    background: rgb(16, 76, 126); 
+    padding: 7px;
+    border-radius: 5px;
+    
+}

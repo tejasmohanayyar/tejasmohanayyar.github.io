@@ -1,0 +1,6 @@
+FInd the following :-
+
+- Max FDI
+- Min FDI
+- FDI Trend
+- Sector Grouping & Comparision

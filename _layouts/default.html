@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  {% include head.html %}
+  
+<body class = "container">
+<div id = "left">
+  <nav class = "topnav">
+    
+      <a href='{{ site.url }}' {% if page.title == 'projects' %}class='active'{% endif %}>Projects</a>
+
+      <a href='{{ site.url }}/about' {% if page.title == 'about' %}class='active'{% endif %}>About</a>
+      
+  </nav>
+  
+  <a id = "sitetitlelink" href = "{{ site.url }}"><h1  class = "sitetitle">{{ site.title }}</h1></a>
+
+    
+    
+    <img  id = "image-properties" src = "{{ site.image }}">
+    
+    <p id = "lefttext">{{ site.name }}</p>
+    
+    <nav id = "social">
+        <a target = "_blank" href="https://github.com/{{ site.github_username }}" class="fa fa-github"></a>
+        <a target = "_blank" href="https://twitter.com/{{ site.twitter_username }}" class="fa fa-twitter"></a>
+        <a target = "_blank" href="{{ site.linkedin_url }}" class="fa fa-linkedin"></a>
+        <p id = "lefttext">{{ site.email }}</p>
+      </nav>
+      
+       
+      <nav class = "sleftnavbar">
+          <a href = "{{ site.url }}#deep-learning-project" >DL</a>
+          <a href = "{{ site.url }}#exploratory-data-analysis" >EDA</a>
+          <a href = "{{ site.url }}#tableau-projects" >Tableau</a>
+          <a href = "{{ site.url }}#power-bi-projects" >PowerBI</a>
+          <a href = "{{ site.url }}#sql-projects" >MySQL</a>
+          <a href = "{{ site.url }}#talend-projects" >Talend</a>
+          <a href = "{{ site.url }}#python-apps">py-apps</a>
+          
+          
+        </nav>
+        <br>
+
+
+</div> 
+
+
+
+
+
+<div id = "right">
+
+<div class = "content">
+{{ content }}
+</div>
+<br>
+</div>
+
+
+</body>
+<br>
+</html>

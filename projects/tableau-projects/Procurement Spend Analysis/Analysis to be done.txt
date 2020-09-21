@@ -1,0 +1,10 @@
+- FInd the inventory by :-
+
+  -  Category
+  -  Sub Category
+  -  Product
+  -  Location
+
+- Create a Dashboard
+
+- Create a story showing the visuals from Location, Product & Category
