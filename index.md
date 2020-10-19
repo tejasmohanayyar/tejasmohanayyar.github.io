@@ -13,17 +13,10 @@ title: projects
 
 # Python Apps
 
-|<a target = "_blank" href = "https://tejasmohanayyar.github.io/review-scrapper" id = "postlink" >Building a review scrapper web app with heroku deployment for collecting data.</a>|
-|---|
-|<img  id = "post-image" src = "/images/deployment/review-scrapper-results.png">|
-|The objective of this project was to get an overall understanding of how the deployment process works and learn new things like using pycharm, getting files to download from a web app, scrapping a web page and navigating a web page using beautiful soup.|
-
-
-|<a target = "_blank" href = "https://tejasmohanayyar.github.io/image-scrapper" id = "postlink" >Building an image scrapper for collecting image data.</a>|
-|---|
-|<img  id = "post-image" src = "/images/deployment/review1.png">|
-|The objective with this project was to learn how to scrap images from the web and also create a tool to collect image data for object classification projects.|
-
+|<a target = "_blank" href = "https://tejasmohanayyar.github.io/review-scrapper" id = "postlink" >Building a review scrapper web app with heroku deployment for collecting data.</a>|<a target = "_blank" href = "https://tejasmohanayyar.github.io/image-scrapper" id = "postlink" >Building an image scrapper for collecting image data.</a>|
+|---|---|
+|<img  id = "post-image" src = "/images/deployment/review-scrapper-results.png">|<img  id = "post-image" src = "/images/deployment/review1.png">|
+|The objective of this project was to get an overall understanding of how the deployment process works and learn new things like using pycharm, getting files to download from a web app, scrapping a web page and navigating a web page using beautiful soup.|The objective with this project was to learn how to scrap images from the web and also create a tool to collect image data for object classification projects.|
 
 # Exploratory Data Analysis
 
