@@ -18,6 +18,13 @@ title: projects
 |<img  id = "post-image" src = "/images/deployment/review-scrapper-results.png">|
 |The objective of this project was to get an overall understanding of how the deployment process works and learn new things like using pycharm, getting files to download from a web app, scrapping a web page and navigating a web page using beautiful soup.|
 
+
+|<a target = "_blank" href = "https://tejasmohanayyar.github.io/image-scrapper" id = "postlink" >Building an image scrapper for collecting image data.</a>|
+|---|
+|<img  id = "post-image" src = "/images/deployment/review1.png">|
+|The objective with this project was to learn how to scrap images from the web and also create a tool to collect image data for object classification projects.|
+
+
 # Exploratory Data Analysis
 
 |<a target = "_blank" href = "https://tejasmohanayyar.github.io/pdf/zomato_EDA.pdf" id = "postlink" >Exploring various parameters that affect restaurant ratings on Zomato.</a>|<a target = "_blank" href = "https://tejasmohanayyar.github.io/pdf/FitBit.pdf" id = "postlink">Analyzing FitBit data of a user.</a>|
