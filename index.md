@@ -4,7 +4,7 @@ title: projects
 ---
 
 
-# Deep Learning Project
+# Neural Network Projects
 
 |<a href = "https://tejasmohanayyar.github.io/metalcastingqc" id = "postlink" target = "_blank">Metal Casting product image classification for quality inspection using Pytorch.</a>|
 |---|
