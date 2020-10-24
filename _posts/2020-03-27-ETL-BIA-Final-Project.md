@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Merging multiple excel sheets and converting all features into a common format."
-permalink: "ETL-leads-project"
+title: Merging multiple excel sheets and converting all features into a common format.
+permalink: ETL-leads-project
 
 ---
 

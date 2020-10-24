@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Building a review scrapper web app with heroku deployment for collecting data."
-permalink: "review-scrapper"
+title: Building a review scrapper web app with heroku deployment for collecting data.
+permalink: review-scrapper
 
 ---
 <center><h1><a style = "text-decoration: none" href = "https://nameless-shelf-38935.herokuapp.com/" target = "_blank">App Link</a></h1></center>

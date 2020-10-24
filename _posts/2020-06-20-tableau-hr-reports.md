@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Analyzing HR data to see employee distribution"
-permalink: "tableau-hr-reports"
+title: Analyzing HR data to see employee distribution
+permalink: tableau-hr-reports
 
 ---
 

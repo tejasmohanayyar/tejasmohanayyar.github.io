@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Converting Company Data into meaningful visualizations for Management Insights."
-permalink: "management-insights"
+title: Converting Company Data into meaningful visualizations for Management Insights.
+permalink: management-insights
 
 ---
 

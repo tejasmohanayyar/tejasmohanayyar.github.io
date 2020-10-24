@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Returns analysis of a british company"
-permalink: "tableau-project-sales"
+title: Returns analysis of a british company
+permalink: tableau-project-sales
 
 ---
 

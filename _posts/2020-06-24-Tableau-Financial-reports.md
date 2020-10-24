@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "An FDI case study"
-permalink: "tableau-financial-reports"
+title: An FDI case study
+permalink: tableau-financial-reports
 
 ---
 

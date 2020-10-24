@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Extracting columns out of Nifty dataset and creating our own columns using Tmap"
-permalink: "ETL-nifty-project"
+title: Extracting columns out of Nifty dataset and creating our own columns using Tmap
+permalink: ETL-nifty-project
 
 ---
 

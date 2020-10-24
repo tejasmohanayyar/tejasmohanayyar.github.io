@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Analysing the sample supertore dataset"
-permalink: "tableau-superstore-sales"
+title: Analysing the sample supertore dataset
+permalink: tableau-superstore-sales
 
 ---
 

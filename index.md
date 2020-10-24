@@ -1,6 +1,7 @@
 ---
 layout: page
 title: projects
+metatitle: data science projects
 ---
 
 

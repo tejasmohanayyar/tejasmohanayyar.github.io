@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Creating visualizations to provide cost insights and manage inventory for miscellaneous items."
-permalink: "cost-insights"
+title: Creating visualizations to provide cost insights and manage inventory for miscellaneous items.
+permalink: cost-insights
 
 ---
 

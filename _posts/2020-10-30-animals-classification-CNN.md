@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Classification of Animals in the wild using CNN models and Tensorflow (Keras)"
-permalink: "animals-classification-cnn"
+title: Classification of Animals in the wild using CNN models and Tensorflow (Keras)
+permalink: animals-classification-cnn
 
 ---
 This article is in the development phase.

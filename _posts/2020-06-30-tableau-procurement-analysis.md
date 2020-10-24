@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "A procurement analysis of inventory"
-permalink: "tableau-procurement-analysis"
+title: A procurement analysis of inventory
+permalink: tableau-procurement-analysis
 
 ---
 |Inventory by category|Inventory by product|

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Building an image scrapper for collecting image data."
-permalink: "image-scrapper"
+title: Building an image scrapper for collecting image data.
+permalink: image-scrapper
 
 ---
 |Reading images on google|Saving images|

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Visualizing Sales Performance of a retail store business to give relevant insights."
-permalink: "retail-analysis"
+title: Visualizing Sales Performance of a retail store business to give relevant insights.
+permalink: retail-analysis
 
 ---
 <img src="/images/Power BI project Screens/Retail Analytics Dashboard.png"/>

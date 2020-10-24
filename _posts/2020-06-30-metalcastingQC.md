@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Metal Casting product image classification for quality inspection using Pytorch."
-permalink: "metalcastingqc"
+title: Metal Casting product image classification for quality inspection using Pytorch.
+permalink: metalcastingqc
 
 ---
 
