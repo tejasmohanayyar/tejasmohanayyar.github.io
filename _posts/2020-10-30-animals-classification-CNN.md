@@ -4,9 +4,17 @@ title: "Classification of Animals in the wild using CNN models and Tensorflow (K
 permalink: "animals-classification-cnn"
 
 ---
-This article is in tehe development phase.
+This article is in the development phase.
 
 <img src="/images/Animals_classification/animals_trainset.png"> 
+
+### Contents of this article:
+* What are Convolutional Neural Networks
+* Implementing 4 different CNN models on the mentioned dataset.
+* Presenting comparative findings for the 4 implemented models.
+* Conclusions
+
+**Before delving into this project I would like to give a brief introduction to what convolution neural networks are and how they work.**
 
 ### What are Convolution Neural Networks?
 
@@ -14,9 +22,9 @@ This article is in tehe development phase.
 
 <img src="/images/Animals_classification/CNN-Architecture-over-a-timeline.jpg"> 
 
-### Implementing different models in Convolutional Networks. Their advantages and disadvantages.
+### Implementing 4 different CNN models on the mentioned dataset.
 
-#### LeNet (1998 (check))
+##### LeNet (1998 (check))
 * About Lenet
 
 * Implementation in your example and your findings
@@ -25,7 +33,7 @@ This article is in tehe development phase.
 * Advantages
 * Disadvantages
 
-#### AlexNet (2000 (check))
+##### AlexNet (2000 (check))
 * About AlexNet
 
 * Implementation in your example and your findings
@@ -34,7 +42,7 @@ This article is in tehe development phase.
 * Advantages
 * Disadvantages
 
-#### VGG (2003 (check))
+##### VGG (2003 (check))
 * About AlexNet
 
 * Implementation in your example and your findings
@@ -45,13 +53,15 @@ This article is in tehe development phase.
 
 ***There is the Inception-V1 and Inception-V3 models that came in 2006 and 2008 as well but I have skipped those models from my experiment.**
 
-#### ResNet (2011 (check))
+##### ResNet (2011 (check))
 * About ResNet
 * Implementation in your example and your findings
 <img src="/images/Animals_classification/Resnet_Output.png">
 
 * Advantages
 * Disadvantages
+
+### Presenting comparative findings for the 4 implemented models.
 
 ### Conclusions
 
