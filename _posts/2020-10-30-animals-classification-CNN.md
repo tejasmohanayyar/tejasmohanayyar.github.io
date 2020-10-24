@@ -4,7 +4,7 @@ title: "Classification of Animals in the wild using CNN models and Tensorflow (K
 permalink: "animals-classification-cnn"
 
 ---
-This article is in tehe development phase.
+This article is in the development phase.
 
 <img src="/images/Animals_classification/animals_trainset.png"> 
 
