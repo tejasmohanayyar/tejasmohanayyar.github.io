@@ -1,18 +1,18 @@
 ---
 layout: post
 title: "Classification of Animals in the wild using CNN models and Tensorflow (Keras)"
-permalink: "animals-classification-CNN"
+permalink: "animals-classification-cnn"
 
 ---
 This article is in tehe development phase.
 
-<img src="/images/animals_classification/animals_trainset.png"> 
+<img src="/images/Animals_classification/animals_trainset.png"> 
 
 ### What are Convolution Neural Networks?
 
 ### The CNN models timeline:
 
-<img src="/images/animals_classification/CNN-Architecture-over-a-timeline.jpg"> 
+<img src="/images/Animals_classification/CNN-Architecture-over-a-timeline.jpg"> 
 
 ### Implementing different models in Convolutional Networks. Their advantages and disadvantages.
 
@@ -20,7 +20,7 @@ This article is in tehe development phase.
 * About Lenet
 
 * Implementation in your example and your findings
-<img src="/images/animals_classification/lenet_output.png"> 
+<img src="/images/Animals_classification/lenet_output.png"> 
 
 * Advantages
 * Disadvantages
@@ -29,7 +29,7 @@ This article is in tehe development phase.
 * About AlexNet
 
 * Implementation in your example and your findings
-<img src="/images/animals_classification/alexnet_output.png">
+<img src="/images/Animals_classification/alexnet_output.png">
 
 * Advantages
 * Disadvantages
@@ -38,7 +38,7 @@ This article is in tehe development phase.
 * About AlexNet
 
 * Implementation in your example and your findings
-<img src="/images/animals_classification/VGG_output.png">
+<img src="/images/Animals_classification/VGG_output.png">
 
 * Advantages
 * Disadvantages
@@ -48,7 +48,7 @@ This article is in tehe development phase.
 #### ResNet (2011 (check))
 * About ResNet
 * Implementation in your example and your findings
-<img src="/images/animals_classification/Resnet_Output.png">
+<img src="/images/Animals_classification/Resnet_Output.png">
 
 * Advantages
 * Disadvantages
