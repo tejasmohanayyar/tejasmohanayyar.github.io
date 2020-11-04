@@ -13,7 +13,7 @@ I have used the [African wildlife](https://www.kaggle.com/biancaferreira/african
 
 ### Contents of this article:
 * What are Convolutional Neural Networks
-* Implementing 4 different CNN models on the mentioned dataset.
+* Implementing 4 different CNN models on the mentioned dataset and giving a brief of each model.
 * Presenting comparative findings for the 4 implemented models.
 * Conclusions
 
@@ -65,7 +65,8 @@ https://youtu.be/aircAruvnKk).
 ### AlexNet
 * The AlexNet architecture was introduced in 2012 at the ImageNet Large Scale Visual Recognition Challenge. 
 * It was designed by Alex Krizhevsky and published with Illya Sutskever and Krizhevsky's doctoral advisor Dr. Geoffrey Hinton.
-* AlexNet consisted of 8 layers and used the ReLu activation function which was a major discovery in deep learning. 
+* AlexNet consisted of 8 layers and used the ReLu activation function which was a major discovery in deep learning. It got rid of the vanishing gradient problem since now the gradient values were not limited to a certain range.
+
 * It was the first GPU based CNN model and was 4 times faster than previous models.
 
 
@@ -84,27 +85,53 @@ https://youtu.be/aircAruvnKk).
 
 * Compared to models used further in this article, the depth of this model is very less and hence it struggles to learn features from image sets. 
 
-* We can see that it takes more time to achieve higher accuracy results. **check**
+* We can see that it takes more time to achieve higher accuracy results compared to future models.
 
 
-##### VGG
-* About VGG
+### VGG
+* Visual Geometric Group or VGG is a CNN architecture that was introduced 2 years after AlexNet in 2014. The main reason for introducing this model was to see the effect of depth on accuracy while training models for image classification/recognition.
+
+* The VGG network introduced the concept of grouping mmultiple convolution layers with smaller kernel sizes instead of having one Conv layer with a large kernel size. This caused the number of features at the output to reduce and second was including 3 ReLu layers instead of one increasing learning instances. As can be seen from the image above we see the layered structure followed by a pooling layer.
 
 * Implementation in your example and your findings
 <img src="/images/Animals_classification/VGG_output.png">
 
-* Advantages
-* Disadvantages
+##### Advantages
+
+* VGG brought with it a massive improvement in accuracy and an improvement in speed as well. This was primarily because of improving the depth of the model and also introducing pretrained models.
+
+* The increase in the number of layers with smaller kernels saw an increase in non-linearity which is always a positive in deep learning.
+
+* VGG brought with it various architectures built on the similar concept. This gives more options to us as to which architecture could best fit our application. 
+
+##### Disadvantages
+
+* One major disadvantage that I found was that this model experiences the vanishing gradient problem. If we look at my validation loss graph, we clearly see it increasing as a trend. This wasn't the case with any of the other models. The vanishing gradient problem was solved with the ResNet architecture.
+
+* VGG is slower than the newer ResNet architecture that introduced the concept of residual learning which was another major breakthrough.
 
 ***There is the Inception-V1 and Inception-V3 models that came in 2006 and 2008 as well but I have skipped those models from my experiment.**
 
-##### ResNet
-* About ResNet
+### ResNet
+
+* ResNet was introduced in 2015 and brought a massive improvement in accuracy and a major speed improvement.
+* VGG had introduced the concept of increasing layers for better accuracy, however it was found that when we increse the number of layers beyond 20, the model is not able to converge to the minimum error %. A major reason for this is the vanishing gradient problem. learning rate becomes so less that there are no changes being introduced into the weights of the model.
+
+* Another problem was the explosion of gradients. This is also visible in my VGG graph where my loss fluctuates eratically. This was solved when Batch Normalization was introduced but it still fluctuates albeit over a smaller range.
+
+* To combat this, the concept of residual learning was introduced which was inspired from the concept of lateral inhibition in the human brain. It simply means that the neurons in the brain are able to control whether their neighbouring neurons fire or not.
+
+* Residual learning can be explained with a very simple example. Initially when we learn to ride a bike we make mistakes and we learn. Once we are able to ride the bike, our brain has stopped fiering the neurons responsible to learn the skill allowing us to focus on other things involved with riding the bike.
+
 * Implementation in your example and your findings
 <img src="/images/Animals_classification/Resnet_Output.png">
 
-* Advantages
-* Disadvantages
+##### Advantages
+
+* The ResNet architecture does not need to fire all neurons in every epoch. This gratly reduces the training time and improves accuracy. Once a feature is learnt, it does not try to learn it again but rather focuses on learning newer features. A very smart approach that greatly improved model training performance.
+
+* The complexity of an identical VGG network caused the degradation problem which was solved by residual learning. 
+
 
 ### Presenting comparative findings for the 4 implemented models.
 
