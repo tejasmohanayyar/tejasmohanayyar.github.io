@@ -62,9 +62,7 @@ metatitle: data science projects
 |<img  id = "post-image" src = "/images/Images/SQL Outputs/mid course project output images/Header mid-course.png">|<img id = "post-image" src = "/images/Images/SQL Outputs/Final course project output images/Header Final Course.png">|
 |Mavenfuzzyfactory has been live for 8 months and the CEO is due to present company performance metrics to the board next week. I have been tasked to prepare relevant metrics to show the company’s promising growth.|Mavenfuzzyfactory’s CEO is close to securing its next round of funding and she needs our help to tell a compelling story to investors. We’ll need to pull the relevant data, and help her craft a story about a data-driven company that has been producing rapid growth.|
 
-# ETL Projects
-
-## Talend Projects
+# Talend Projects
 
 |<a target = "_blank" href = "https://tejasmohanayyar.github.io/ETL-leads-project" id = "postlink" > Merging multiple excel sheets and converting all features into a common format.</a>|<a target = "_blank" href = "https://tejasmohanayyar.github.io/ETL-nifty-project" id = "postlink" > Extracting columns out of Nifty dataset and creating our own columns using Tmap.</a>|
 |--|---|
