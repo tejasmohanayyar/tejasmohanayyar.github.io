@@ -4,7 +4,6 @@ title: Classification of Animals in the wild using CNN models and Tensorflow (Ke
 permalink: animals-classification-cnn
 
 ---
-This article is in the development phase.
 
 <img src="/images/Animals_classification/animals_trainset.png"> 
 
@@ -33,7 +32,7 @@ I have used the [African wildlife](https://www.kaggle.com/biancaferreira/african
 * Lastly the output of the CNN is flattened and sent into a fully connected layer. This is our Neural Network part of CNN. It will enable the machine to learn from the extracted features and create a generalized model. 
 
 * To know more about Convolutional Neural Networks I would start from this [video](
-https://youtu.be/aircAruvnKk)
+https://youtu.be/aircAruvnKk).
 
 ### The CNN models timeline
 
@@ -63,17 +62,33 @@ https://youtu.be/aircAruvnKk)
 
 * Since the model isn't very deep, it struggles to scan for all features thus producing poor performing models. If the Neural Network isn't fed with enough features from the training images then it would be difficult for the model to generalize and create an accurate model.
 
-##### AlexNet
-* About AlexNet
+### AlexNet
+* The AlexNet architecture was introduced in 2012 at the ImageNet Large Scale Visual Recognition Challenge. 
+* It was designed by Alex Krizhevsky and published with Illya Sutskever and Krizhevsky's doctoral advisor Dr. Geoffrey Hinton.
+* AlexNet consisted of 8 layers and used the ReLu activation function which was a major discovery in deep learning. 
+* It was the first GPU based CNN model and was 4 times faster than previous models.
+
 
 * Implementation in your example and your findings
 <img src="/images/Animals_classification/alexnet_output.png">
 
-* Advantages
-* Disadvantages
+##### Advantages
+
+* AlexNet was the first major CNN model that used GPU's for training. This lead to faster training of models.
+* AlexNet is a deeper architecture with 8 layers which means that is better able to extract features when compared to LeNet. It also worked well for the time with color images.
+* The ReLu activation function used in this network has 2 advantages. It does not limit the output unlike other activation functions. This means there isn't too much loss of features.
+* It negates the negative output of summation of gradients and not the dataset itself. This means that it will further improve model training speed since not all perceptrons are active.
+
+##### Disadvantages
+
+
+* Compared to models used further in this article, the depth of this model is very less and hence it struggles to learn features from image sets. 
+
+* We can see that it takes more time to achieve higher accuracy results. **check**
+
 
 ##### VGG
-* About AlexNet
+* About VGG
 
 * Implementation in your example and your findings
 <img src="/images/Animals_classification/VGG_output.png">
