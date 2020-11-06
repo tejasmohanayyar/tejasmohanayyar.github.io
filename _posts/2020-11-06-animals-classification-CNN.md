@@ -7,11 +7,11 @@ permalink: animals-classification-cnn
 
 <img src="/images/Animals_classification/animals_trainset.png"> 
 
-I started learning about Neural Networks and different model architectures in CNN. Here I am writing about 4 model architectures and what were my findings when I trained my image set on these 4 models. The article was written for learning purpose only and to get a better understading of the improvements we see across these models.
+I started learning about Neural Networks and different model architectures in CNN. Here I am writing about 4 model architectures and what were my findings when I trained my image set on these 4 models. The article was written for learning purpose only and to get a better understanding of the improvements we see across these models.
 
 All observations here are tied to one image set and cannot be taken as a metric for how well a model performs. It depends on each use case as to which model would be best suited. For example if you read about my <a href = "https://tejasmohanayyar.github.io/metalcastingqc">metal casting</a> project, a simple CNN model tended to do much better than the ResNet model which performs brilliantly here.
 
-### Dataset used for the experiement
+### Dataset used for the experiment
 
 I have used the [African wildlife](https://www.kaggle.com/biancaferreira/african-wildlife) dataset for my experiment.
 
@@ -72,7 +72,7 @@ https://youtu.be/aircAruvnKk).
 
 ##### Disadvantages
 
-* This model was more specifcally built for a certain use case. While it was a major breakthrough in 1998, it does not do as well with color images. Most image recognition problems would require RGB images for better recognition.
+* This model was more specifically built for a certain use case. While it was a major breakthrough in 1998, it does not do as well with color images. Most image recognition problems would require RGB images for better recognition.
 
 * Since the model isn't very deep, it struggles to scan for all features thus producing poor performing models. If the Neural Network isn't fed with enough features from the training images then it would be difficult for the model to generalize and create an accurate model.
 
@@ -90,7 +90,7 @@ https://youtu.be/aircAruvnKk).
 ##### Implementation in your example and your findings
 <img src="/images/Animals_classification/AlexNet_graph.png">
 
-* What I observed is that the speed of training improved when compared to LeNet. We clearly can see in the graph that this model achieve's a better accuracy much faster.
+* What I observed is that the speed of training improved when compared to LeNet. We clearly can see in the graph that this model achieves a better accuracy much faster.
 
 * Loss also reduces at a faster rate when compared to LeNet.
 
@@ -123,7 +123,7 @@ https://youtu.be/aircAruvnKk).
 
 <img src="/images/Animals_classification/VGG_graph.png">
 
-* My observation here is that while the number of epoch's required to achieve max accuracy has decreased, however the loss is taking much more longer to converge to minima.
+* My observation here is that while the number of epoch's required to achieve max accuracy has decreased, however the loss is taking much longer to converge to minima.
 
 * The introduction of more layers in VGG has allowed the model to better understand the features within an image.
 
@@ -156,9 +156,9 @@ https://youtu.be/aircAruvnKk).
 <img src="/images/Animals_classification/Resnet.png" style = "width:auto; height:auto">
 
 * ResNet was introduced in 2015 and brought a massive improvement in accuracy and a major speed improvement.
-* VGG had introduced the concept of increasing layers for better accuracy, however it was found that when we increse the number of layers beyond 20, the model is not able to converge to the minimum error %. A major reason for this is the vanishing gradient problem. learning rate becomes so less that there are no changes being introduced into the weights of the model.
+* VGG had introduced the concept of increasing layers for better accuracy, however it was found that when we increase the number of layers beyond 20, the model is not able to converge to the minimum error %. A major reason for this is the vanishing gradient problem. learning rate becomes so less that there are no changes being introduced into the weights of the model.
 
-* Another problem was the explosion of gradients. This is also visible in my VGG graph where my loss fluctuates eratically. This was solved when Batch Normalization was introduced but it still fluctuates albeit over a smaller range.
+* Another problem was the explosion of gradients. This is also visible in my VGG graph where my loss fluctuates erratically. This was solved when Batch Normalization was introduced but it still fluctuates albeit over a smaller range.
 
 * To combat this, the concept of residual learning was introduced which was inspired from the concept of lateral inhibition in the human brain. It simply means that the neurons in the brain are able to control whether their neighbouring neurons fire or not.
 
@@ -169,11 +169,11 @@ https://youtu.be/aircAruvnKk).
 
 * We see a drastic improvement in achieving high accuracy and low loss. The concept of residual learning can be called a major breakthrough in Neural Networks.
 
-* The model created from the ResNet archtecture also had a low validation loss which meant that there was no overfitting happenning while training.
+* The model created from the ResNet archtecture also had a low validation loss which meant that there was no overfitting happening while training.
 
 ##### Advantages
 
-* The ResNet architecture does not need to fire all neurons in every epoch. This gratly reduces the training time and improves accuracy. Once a feature is learnt, it does not try to learn it again but rather focuses on learning newer features. A very smart approach that greatly improved model training performance.
+* The ResNet architecture does not need to fire all neurons in every epoch. This greatly reduces the training time and improves accuracy. Once a feature is learnt, it does not try to learn it again but rather focuses on learning newer features. A very smart approach that greatly improved model training performance.
 
 * The complexity of an identical VGG network caused the degradation problem which was solved by residual learning. 
 
