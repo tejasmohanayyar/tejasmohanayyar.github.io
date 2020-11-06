@@ -4,13 +4,12 @@ title: projects
 metatitle: data science projects
 ---
 
-
 # Neural Network Projects
 
-|<a href = "https://tejasmohanayyar.github.io/metalcastingqc" id = "postlink" target = "_blank">Metal Casting product image classification for quality inspection using Pytorch.</a>|
-|---|
-|<img  id = "post-image" src = "/images/Metal casting project images/imageset.png">|
-|The objective of this project is to automate the process of finding defects in the casting process. A casting defect is an undesired irregularity in a metal casting process. This post has also been featured in <a href = "https://medium.com/jovianml/metal-casting-product-image-classification-for-quality-inspection-using-pytorch-72c696d205f3" target = "_blank">jovian.ml's medium publication</a>.|
+|<a href = "https://tejasmohanayyar.github.io/metalcastingqc" id = "postlink" target = "_blank">Metal Casting product image classification for quality inspection using Pytorch.</a>|<a href = "https://tejasmohanayyar.github.io/animals-classification-cnn" id = "postlink" target = "_blank">Classification of Animals in the wild using CNN models and Tensorflow (Keras)</a>|
+|---|---|
+|<img  id = "post-image" src = "/images/Metal casting project images/imageset.png">|<img src="/images/Animals_classification/animals_trainset.png"> |
+|The objective of this project is to automate the process of finding defects in the casting process. A casting defect is an undesired irregularity in a metal casting process. This post has also been featured in <a href = "https://medium.com/jovianml/metal-casting-product-image-classification-for-quality-inspection-using-pytorch-72c696d205f3" target = "_blank">jovian.ml's medium publication</a>.|I started learning about Neural Networks and different model architectures in CNN. Here I am writing about 4 model architectures and what were my findings when I trained my image set on these 4 models. The article was written for learning purpose only and to get a better understading of the improvements we see across these models.
 
 # Python Apps
 
