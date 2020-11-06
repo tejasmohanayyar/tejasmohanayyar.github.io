@@ -165,7 +165,7 @@ https://youtu.be/aircAruvnKk).
 * Residual learning can be explained with a very simple example. Initially when we learn to ride a bike we make mistakes and we learn. Once we are able to ride the bike, our brain has stopped fiering the neurons responsible to learn the skill allowing us to focus on other things involved with riding the bike.
 
 ##### Implementation in your example and your findings
-<img src="/images/Animals_classification/ResNet_graph.png">
+<img src="/images/Animals_classification/ResNet_Graph.png">
 
 * We see a drastic improvement in achieving high accuracy and low loss. The concept of residual learning can be called a major breakthrough in Neural Networks.
 
