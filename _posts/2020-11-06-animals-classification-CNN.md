@@ -23,8 +23,7 @@ There are 4 classes in this dataset:
 
 ### Contents of this article:
 * What are Convolutional Neural Networks
-* Implementing 4 different CNN models on the mentioned dataset and giving a brief of each model.
-* Presenting comparative findings for the 4 implemented models.
+* Implementing 4 different CNN models on the mentioned dataset and giving a brief of each model with inferences from my experiment.
 * Conclusions
 
 ### What are Convolution Neural Networks?
