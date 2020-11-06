@@ -153,7 +153,7 @@ https://youtu.be/aircAruvnKk).
 
 ### ResNet
 
-<img src="/images/Animals_classification/resnet.png" style = "width:auto; height:auto">
+<img src="/images/Animals_classification/Resnet.png" style = "width:auto; height:auto">
 
 * ResNet was introduced in 2015 and brought a massive improvement in accuracy and a major speed improvement.
 * VGG had introduced the concept of increasing layers for better accuracy, however it was found that when we increse the number of layers beyond 20, the model is not able to converge to the minimum error %. A major reason for this is the vanishing gradient problem. learning rate becomes so less that there are no changes being introduced into the weights of the model.
@@ -165,7 +165,7 @@ https://youtu.be/aircAruvnKk).
 * Residual learning can be explained with a very simple example. Initially when we learn to ride a bike we make mistakes and we learn. Once we are able to ride the bike, our brain has stopped fiering the neurons responsible to learn the skill allowing us to focus on other things involved with riding the bike.
 
 ##### Implementation in your example and your findings
-<img src="/images/Animals_classification/Resnet_graph.png">
+<img src="/images/Animals_classification/ResNet_graph.png">
 
 * We see a drastic improvement in achieving high accuracy and low loss. The concept of residual learning can be called a major breakthrough in Neural Networks.
 
