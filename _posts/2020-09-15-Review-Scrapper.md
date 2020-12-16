@@ -11,7 +11,6 @@ permalink: review-scrapper
 |--|--|
 
 
-<center><a href = "https://github.com/tejasmohanayyar/flipakrt-review-scrapper/blob/master/allreviewscrapper/" target = "_blank">All files on github</a></center>
 
 ## Why build this app?
 
