@@ -7,6 +7,7 @@ permalink: review-scrapper
 <center><h1><a style = "text-decoration: none" href = "https://nameless-shelf-38935.herokuapp.com/" target = "_blank">App Link</a></h1></center>
 <br>
 
+
 |Home|Results|
 |----|-------|
 |<img src = "/images/deployment/review-scrapper-home.png">|<img src = "/images/deployment/review-scrapper-results.png">|

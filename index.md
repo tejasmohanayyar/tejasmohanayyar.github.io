@@ -3,7 +3,6 @@ layout: page
 title: projects
 metatitle: data science projects
 ---
-
 # Computer Vision
 
 |<a href = "https://tejasmohanayyar.github.io/mask-detection" id = "postlink" target = "_blank">Face Mask Detection TFOD and Faster-RCNN.</a>|
@@ -11,6 +10,12 @@ metatitle: data science projects
 |<img src="images/mask detection/maskdetectiondemo.gif" width="auto" height="auto" />|
 |This project uses the TFOD API built by google's tensorflow team and faster-RCNN to detect whether a person is wearing a mask or not. Read more to find out about faster-rcnn and the specifications of the project.|
 
+# ML Projects
+
+|<a href = "https://tejasmohanayyar.github.io/Real-estate-price-prediction" id = "postlink" target = "_blank">Eeal Estate price prediction with deployment.</a>|
+|---|
+|<img src="images/real estate/realestatedeployed.gif" width="auto" height="auto" />|
+|Complete end to end project of predicting property prices in Mumbai from Scrapping data, feature engineering, Visualization, model creation and deployment|
 
 # Neural Network Projects
 
