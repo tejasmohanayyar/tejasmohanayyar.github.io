@@ -10,7 +10,7 @@ permalink: review-scrapper
 |<img src = "/images/deployment/review-scrapper-home.png">|<img src = "/images/deployment/review-scrapper-results.png">|
 |--|--|
 
-
+<center><a href = "https://github.com/tejasmohanayyar/review-scrapper/tree/master/allreviewscrapper">All files on github</a></center>
 
 ## Why build this app?
 
