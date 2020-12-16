@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Personal Protective Equipment Detection using TFOD and Faster-RCNN
-permalink: PPE-detection
+permalink: ppe-detection
 
 ---
 
@@ -57,8 +57,8 @@ Working:
 
 |||
 |---|---|
-|<img src="images/ppe detection/2.png" width="auto" height="auto" />|<img src="images/ppe detection/3.png" width="auto" height="auto" />|
-|<img src="images/ppe detection/4.png" width="auto" height="auto" />|<img src="images/ppe detection/5.png" width="auto" height="auto" />|
+|<img src="images/PPE detection/2.png" width="auto" height="auto" />|<img src="images/PPE detection/3.png" width="auto" height="auto" />|
+|<img src="images/PPE detection/4.png" width="auto" height="auto" />|<img src="images/PPE detection/5.png" width="auto" height="auto" />|
 
 
 
