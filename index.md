@@ -5,10 +5,10 @@ metatitle: data science projects
 ---
 # Computer Vision
 
-|<a href = "https://tejasmohanayyar.github.io/mask-detection" id = "postlink" target = "_blank">Face Mask Detection TFOD and Faster-RCNN.</a>|
-|---|
-|<img src="images/mask detection/maskdetectiondemo.gif" width="auto" height="auto" />|
-|This project uses the TFOD API built by google's tensorflow team and faster-RCNN to detect whether a person is wearing a mask or not. Read more to find out about faster-rcnn and the specifications of the project.|
+|<a href = "https://tejasmohanayyar.github.io/mask-detection" id = "postlink" target = "_blank">Face Mask Detection TFOD and Faster-RCNN.</a>|<a href = "https://tejasmohanayyar.github.io/ppe-detection" id = "postlink" target = "_blank">Personal Protective Equipment Detection using TFOD and Faster-RCNN.</a>|
+|---|---|
+|<img src="images/mask detection/maskdetectiondemo.gif" width="auto" height="auto" />|<img src="images/ppe detection/3.png" width="auto" height="auto" />|
+|This project uses the TFOD API built by google's tensorflow team and faster-RCNN to detect whether a person is wearing a mask or not. Read more to find out about faster-rcnn and the specifications of the project.|This project uses the TFOD API built by google's tensorflow team and faster-RCNN to detect whether a person is wearing personal protective equipment or not. Read more to find out about faster-rcnn and the specifications of the project.|
 
 # ML Projects
 
