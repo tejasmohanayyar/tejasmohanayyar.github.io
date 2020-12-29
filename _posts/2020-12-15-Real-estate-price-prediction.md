@@ -7,7 +7,7 @@ permalink: Real-estate-price-prediction
 
 <center><a style = "text-align: center" target="_blank" href = "https://github.com/tejasmohanayyar/real-estate-price-prediction-end-to-end-project-with-deployment"> Project on github </a> </center>
 
-<center><a style = "text-align: center" target="_blank" href = "https://secure-headland-42412.herokuapp.com/"> Web app link </a> </center>
+<center><a style = "text-align: center" target="_blank" href = "https://real-estate-mumbai.herokuapp.com/"> Web app link </a> </center>
 
 
 ## Index of this post
@@ -57,7 +57,7 @@ I had pursued a 6 month internship at Sunteck realty ltd. from May to September 
 
 * For deployment I have written some bare-bones html and css to demo this app. 
 * I have also used the flask API in a python script which can be found [here](https://github.com/tejasmohanayyar/real-estate-price-prediction-end-to-end-project-with-deployment/blob/master/app.py).
-* Finally I have deployed the app on heroku, the link to which can be found [here](https://secure-headland-42412.herokuapp.com/).
+* Finally I have deployed the app on heroku, the link to which can be found [here](https://real-estate-mumbai.herokuapp.com/).
 
 
 ## Conclusion
