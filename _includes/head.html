@@ -49,10 +49,14 @@
   
     <!-- I prefer the summary_large_image Twitter card for posts. -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="linkedin:card" content="summary_large_image" />
+    
     <!-- You, you're the creator. -->
     <meta name="twitter:creator" content="@tejasmayyar" />
     <!-- This property is for the article title, not site title. -->
     <meta name="twitter:title" content="{{page.title}}" />
+    <meta name="linkedin:title" content="{{page.title}}" />
+    
   
 
 
@@ -60,6 +64,8 @@
 {% if page.image %}
     <meta property="og:image" content="{{page.image}}" />
     <meta name="twitter:image" content="{{page.image}}" />
+    <meta name="linkedin:image" content="{{page.image}}" />
+    
   {% else %}
     <meta property="og:image" content="https://tejasmohanayyar.github.io/images/mask%20detection/maskdetectiondemo.gif" />
     <meta name="twitter:image" content="https://tejasmohanayyar.github.io/images/mask%20detection/maskdetectiondemo.gif" />
@@ -73,4 +79,9 @@
   <meta name="twitter:title" content="{{site.title}}" />
   <meta name="twitter:image" content="https://tejasmohanayyar.github.io/images/mask%20detection/maskdetectiondemo.gif" />
 
+
+  <meta name="linkedin:card" content="I write about all my projects on this page. You can check it out!" />
+  <meta name="linkedin:title" content="{{site.title}}" />
+  <meta name="linkedin:image" content="https://tejasmohanayyar.github.io/images/mask%20detection/maskdetectiondemo.gif" />
+  
 {% endif %}
