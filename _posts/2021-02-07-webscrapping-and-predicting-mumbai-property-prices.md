@@ -6,6 +6,9 @@ vertical: Code
 image: https://tejasmohanayyar.github.io/images/real%20estate/realestatedeployed.gif
 permalink: real-estate-price-estimation
 ---
+
+<img src="images/real estate/realestatedeployed.gif" width="auto" height="auto" />
+
 <center><a style = "text-align: center" target="_blank" href = "https://github.com/tejasmohanayyar/webscrapping-and-predicting-mumbai-property-prices"> Project on github </a> </center>
 
 <center><a style = "text-align: center" target="_blank" href = "https://mumbai-property-price.herokuapp.com/"> Web app link </a> </center>
