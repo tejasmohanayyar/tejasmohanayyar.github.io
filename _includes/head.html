@@ -5,3 +5,72 @@
 <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/tejasmohanayyar/tejasmohanayyar.github.io/master/images/tejas.png"/>
 <meta name="google-site-verification" content="imZk-BNM7Suhl_gcyjCTqZQ3XnfQldQKB05kPzUeJZY" />
 
+<!-- -->
+<meta name="author" content="Tejas Mohan Ayyar" />
+
+<meta property="og:title"
+    content="{% if page.title %}
+      {{ page.title | strip_html | strip_newlines | truncate: 160 }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}">
+
+<meta property="og:description"
+    content="{% if page.excerpt %}
+        {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
+      {% else %}
+        {{ site.description }}
+      {% endif %}">
+
+
+<meta property="og:url"
+    content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+
+
+    {% if page.title %}
+    <!-- Article specific OG data -->
+    <!-- The OG:Type dictates a number of other tags on posts. -->
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="{{page.date}}" />
+  
+    <!-- page.modified isn't a natural Jekyll property, but it can be added. -->
+    {% if page.modified %}
+      <meta property="article:modified_time" content="{{page.modified}}" />
+    {% endif %}
+  
+  
+    <!-- Article section isn't a required property, but it can be good to have -->
+    <meta property="article:section" content="{{page.vertical}}" />
+  
+    <!-- I use the page.categories property for OG tags. -->
+    {% for tag in page.categories %}
+      <meta property="article:tag" content="{{tag}}" />
+    {% endfor %}
+  
+    <!-- I prefer the summary_large_image Twitter card for posts. -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- You, you're the creator. -->
+    <meta name="twitter:creator" content="@tejasmayyar" />
+    <!-- This property is for the article title, not site title. -->
+    <meta name="twitter:title" content="{{page.title}}" />
+  
+
+
+
+{% if page.image %}
+    <meta property="og:image" content="{{page.image}}" />
+    <meta name="twitter:image" content="{{page.image}}" />
+  {% else %}
+    <meta property="og:image" content="https://tejasmohanayyar.github.io/images/mask%20detection/maskdetectiondemo.gif" />
+    <meta name="twitter:image" content="https://tejasmohanayyar.github.io/images/mask%20detection/maskdetectiondemo.gif" />
+  {% endif %}
+
+  {% else %}
+  <!-- OG data for homepage -->
+  <meta property="og:image" content="https://tejasmohanayyar.github.io/images/mask%20detection/maskdetectiondemo.gif" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="I write about all my projects on this page. You can check it out!" />
+  <meta name="twitter:title" content="{{site.title}}" />
+  <meta name="twitter:image" content="https://tejasmohanayyar.github.io/images/mask%20detection/maskdetectiondemo.gif" />
+
+{% endif %}

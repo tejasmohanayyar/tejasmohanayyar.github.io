@@ -5,13 +5,6 @@ excerpt: "Price estimation of properties inn Mumbai using machine learning, webs
 image: https://tejasmohanayyar.github.io/images/real%20estate/realestatedeployed.gif
 permalink: real-estate-price-estimation
 ---
-{% if page.image %}
-    <meta property="og:image" content="{{page.image}}" />
-    <meta name="twitter:image" content="{{page.image}}" />
-  {% else %}
-    <meta property="og:image" content="none" />
-    <meta name="twitter:image" content="none" />
-  {% endif %}
 
 <img src="images/real estate/realestatedeployed.gif" width="auto" height="auto" />
 
