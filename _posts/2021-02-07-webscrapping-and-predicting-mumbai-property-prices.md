@@ -2,17 +2,10 @@
 layout: post
 title: Property Price Estimation using Webscrapping and Machine Learning with Heroku deployment.
 excerpt: "Price estimation of properties in Mumbai using machine learning, webscrapping, bootstrap framework and deployment."
+vertical: Code
 image: https://tejasmohanayyar.github.io/images/real%20estate/realestatedeployed.gif
 permalink: real-estate-price-estimation
 ---
-{% if page.image %}
-    <meta property="og:image" content="{{page.image}}" />
-    <meta name="twitter:image" content="{{page.image}}" />
-  {% else %}
-    <meta property="og:image" content="none" />
-    <meta name="twitter:image" content="none" />
-  {% endif %}
-
 <img src="images/real estate/realestatedeployed.gif" width="auto" height="auto" />
 
 <center><a style = "text-align: center" target="_blank" href = "https://github.com/tejasmohanayyar/webscrapping-and-predicting-mumbai-property-prices"> Project on github </a> </center>
