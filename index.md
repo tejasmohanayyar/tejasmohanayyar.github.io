@@ -12,7 +12,7 @@ metatitle: data science projects
 
 # ML Projects
 
-|<a href = "https://tejasmohanayyar.github.io/Real-estate-price-prediction" id = "postlink" target = "_blank">Mumbai Real Estate price prediction with deployment.</a>|
+|<a href = "https://tejasmohanayyar.github.io/real-estate-price-estimation" id = "postlink" target = "_blank">Mumbai Real Estate price prediction with deployment.</a>|
 |---|
 |<img src="images/real estate/realestatedeployed.gif" width="auto" height="auto" />|
 |Complete end to end project of predicting property prices in Mumbai from Scrapping data, feature engineering, Visualization, model creation and deployment|
