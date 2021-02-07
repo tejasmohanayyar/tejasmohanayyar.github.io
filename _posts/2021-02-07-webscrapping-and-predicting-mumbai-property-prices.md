@@ -42,7 +42,7 @@ I have developed this "Property Price Estimation" web app for Mumbai based prope
 
 ## Methodology followed
 
-##### Data Collection Strategy
+### Data Collection Strategy
 
 * From the website  that I was collecting data, they had blocked access to libraries like urllib and url request. The only way to access the website was through a browser. So I decided to use the **Selenium** python library that would access the website via a browser and I could also code the entire scrapping process in python. 
 
@@ -50,7 +50,7 @@ I have developed this "Property Price Estimation" web app for Mumbai based prope
 
 * I in no way encourage people to do webscrapping and understand that the hosts server faces the load. Hence I am safely scrapping 40-50 records every 2-3 days to ensure I am not bombarding the hosts system.
 
-##### Handling Bad Data
+### Handling Bad Data
 
 **Webscrapping issues and challenges:**
 
@@ -76,7 +76,7 @@ I have developed this "Property Price Estimation" web app for Mumbai based prope
 
 * Lastly in future I would like to store this information in an S3 bucket on amazon aws or any other cloud based solution that is of least cost.
 
-##### Handling Missing Data
+### Handling Missing Data
 
 * For most of the features I used the standard methods of handling missing data (**mean,median and mode**). If there were columns that had **missing data over 60%** I would **drop it** however the data is still present in the csv file and is just not being used for the modelling process.
 
@@ -90,12 +90,12 @@ I have developed this "Property Price Estimation" web app for Mumbai based prope
 
 * **Location conversion to latitude and longitude** This column according to my knowledge plays a significant role in the pricing of a property. Installing geppandas gave me some trouble however I was able to solve it by installing the library as administrator. I wanted to save whichever locations I have got since I did not want to call the **geopy** object again and again for the same location. **Latitude can be around 18 or 19 only and longitude around 72 or 73 degrees for Mumbai.** Since not everyone puts generic location it becomes difficult to extract latitude and longitude. **We are saving such records into a seperate file called bad records and not discarding it. This allows us to check whether such a bad column ever occurs again reducing execution time.**
 
-##### Statistical Techniques
+### Statistical Techniques
 
 * I used the ttest_ind function from stats library for columns having 2 categories and compared it with price.
 * Used Anova test and Tukey HSD to check for difference in mean of price for each category against the other.
 
-##### Exploratory Data Analysis
+### Exploratory Data Analysis
 
 * **Univariate Analysis:
 	- Looking at the distributions of all numerical features I observed that area,total_floors,flat_floor_no and price of property were all skewed. Applying log transformation to these columns reduced the skewness significantly making the data more normally distributed. The same imputations are also done to data entered by users and exponent of prediction is taken since our target is predicted on the log scale.
@@ -118,45 +118,45 @@ I have developed this "Property Price Estimation" web app for Mumbai based prope
 
 * **Non-Parametric Models**
 
-- ***DecisionTreeRegressor*** models usually tend to overfit due to their simplistic nature of spltting based on each feature based on entropy and gain or gini. However since this is a regression problem the split happens on the mean of the column and gini and entropy/gain is used only by DecisionTreeClassifier.
+	- ***DecisionTreeRegressor*** models usually tend to overfit due to their simplistic nature of spltting based on each feature based on entropy and gain or gini. However since this is a regression problem the split happens on the mean of the column and gini and entropy/gain is used only by DecisionTreeClassifier.
 
-- ***RandomForestRegressor*** seems to reduce overfitting which is greatly due to the randomness that this model brings into the picture and is based on the bagging framework. Essentially it takes a group of trees and a random set of data to train over. The randomness introduced helps to better generalize on the dataset. Random Forest uses the Bootstrapping or Pasting approach when selecting data for each tree. In bootstrapping data is selected with replacement where as in pasting there is no repetition of data for each tree learner. In most cases bootstrap = True does a much better job at both generalizing and increasing overall accuracy.
+	- ***RandomForestRegressor*** seems to reduce overfitting which is greatly due to the randomness that this model brings into the picture and is based on the bagging framework. Essentially it takes a group of trees and a random set of data to train over. The randomness introduced helps to better generalize on the dataset. Random Forest uses the Bootstrapping or Pasting approach when selecting data for each tree. In bootstrapping data is selected with replacement where as in pasting there is no repetition of data for each tree learner. In most cases bootstrap = True does a much better job at both generalizing and increasing overall accuracy.
 
 - ***Adaboost (Adaptive Boosting)***
 
-1. Adaboost introduces the concept of weights into decision trees and random forests and is moving towards deep learning approaches.
-2. Adaboost combines a lot of weak learners to make classifications.
-3. Some learners(tree stumps) get more say than others.
-4. Each stump is made by taking the previous stumps mistakes into account.
-5. At the start weights = (1/N (number of rows))
-6. Classification is checked for each feature and correct and incorrect classifications are obtained.
-7. Gini Index determines which stump will come first. Each stump is made of one feature. Lower gini index means feature will be the first stump.
-8. Total error = Sum of weights of correctly classified samples. (0-1). Lower is better.
-9. Amount of say (alpha):
-<center><img width= "400px" height = "auto" src = "https://blog.paperspace.com/content/images/2019/11/image-52.png"></center>
+	1. Adaboost introduces the concept of weights into decision trees and random forests and is moving towards deep learning approaches.
+	2. Adaboost combines a lot of weak learners to make classifications.
+	3. Some learners(tree stumps) get more say than others.
+	4. Each stump is made by taking the previous stumps mistakes into account.
+	5. At the start weights = (1/N (number of rows))
+	6. Classification is checked for each feature and correct and incorrect classifications are obtained.
+	7. Gini Index determines which stump will come first. Each stump is made of one feature. Lower gini index means feature will be the first stump.
+	8. Total error = Sum of weights of correctly classified samples. (0-1). Lower is better.
+	9. Amount of say (alpha):
+	<center><img width= "400px" height = "auto" src = "https://blog.paperspace.com/content/images/2019/11/image-52.png"></center>
 
-10. **In below diagram negative means it will reverse the classification output to make the incorrect classification correct. If error is 0.5, amount of say is 0.**
+	10. **In below diagram negative means it will reverse the classification output to make the incorrect classification correct. If error is 0.5, amount of say is 0.**
 
-<center><img width= "400px" height = "auto" src = "https://coderspacket.com/uploads/user_files/2020-08/Error_vs_Alpha_Graph-1596627837-24.png"></center>
+	<center><img width= "400px" height = "auto" src = "https://coderspacket.com/uploads/user_files/2020-08/Error_vs_Alpha_Graph-1596627837-24.png"></center>
 
-11. The new sample weight = old sample weight * e^amount of say.
+	11. The new sample weight = old sample weight * e^amount of say.
 
-12. Next we will decrease the sample weights = sample weight * e^-amount of say. This is done to improve performance.
+	12. Next we will decrease the sample weights = sample weight * e^-amount of say. This is done to improve performance.
 
-<center><img width= "400px" height = "auto" src = "https://www.kdnuggets.com/wp-content/uploads/ajeeth-adaboost-10.jpg"></center>
+	<center><img width= "400px" height = "auto" src = "https://www.kdnuggets.com/wp-content/uploads/ajeeth-adaboost-10.jpg"></center>
 
-13. After we have found the sample weight we will make this the new weights for the correct and incorrect classifications and normalize them. These weights will now be used for the next stump. To create a new collection of samples and get rid of the old samples.
-14. Adaboost seems to reduce overfitting when compared to decision trees and increases overall accuracy compared to RandomForest.
+	13. After we have found the sample weight we will make this the new weights for the correct and incorrect classifications and normalize them. These weights will now be used for the next stump. To create a new collection of samples and get rid of the old samples.
+	14. Adaboost seems to reduce overfitting when compared to decision trees and increases overall accuracy compared to RandomForest.
 
 * ***GradientBoostingRegressor:*** Next I decided to try gradient boosting regressor which was able to somewhat reduce the problem of overfitting however was not able to increase the accuracy score.
 
 * ***XGBoostRegressor:*** Lastly I have applied XGBoost regressor which reduced the overfitting problem by 2 basis points. XGBoost models are known to adjust both bias and variance and give the user a lot of control over how the data is being trained. The different parameters of xgboost and their significance:
 
-- **Max Depth:** This parameter controls tree depth of all the weak learners. Having a lower depth would cause the model have a higher bias and reduce overfitting and introduce underfitting.
-- **SubSample:** The SubSample is the amount of data that should be used to train for each tree. The data is different for each weak learner to better generalize. A higher value tends towards overfitting and a lower subsample tends towards underfitting.
-- **n_estimators:** This is the number of weak learners that xgboost would use to make decisions. More number of estimators tends towards overfitting.
-- **learning_rate:** The concept of gradient descent and deep learning comes to mind when learning rate comes into the picture. Just like in gradient descent where the algorithm is looking for global minima for loss, the same concept applies here as well. Too high a value and the loss swings to different points not attaining global minima and too low a value causes the model to take a longer time to train. Essentially we should adjust the learning rate in such a manner that we are able to get to global minima as well as not sacrifice too much on performance. Adjusting this parameter helps in regularization. 
-- **colsample_bytree/level** have the same effect on the model and help in regularization. 
+	- **Max Depth:** This parameter controls tree depth of all the weak learners. Having a lower depth would cause the model have a higher bias and reduce overfitting and introduce underfitting.
+	- **SubSample:** The SubSample is the amount of data that should be used to train for each tree. The data is different for each weak learner to better generalize. A higher value tends towards overfitting and a lower subsample tends towards underfitting.
+	- **n_estimators:** This is the number of weak learners that xgboost would use to make decisions. More number of estimators tends towards overfitting.
+	- **learning_rate:** The concept of gradient descent and deep learning comes to mind when learning rate comes into the picture. Just like in gradient descent where the algorithm is looking for global minima for loss, the same concept applies here as well. Too high a value and the loss swings to different points not attaining global minima and too low a value causes the model to take a longer time to train. Essentially we should adjust the learning rate in such a manner that we are able to get to global minima as well as not sacrifice too much on performance. Adjusting this parameter helps in regularization. 
+	- **colsample_bytree/level** have the same effect on the model and help in regularization. 
 
 ***For all boosting models grid search cv was used for hyperparameter tuning and only a base model and a best parameters model were trained for comparison. Best parameters always gave us better results.***
 
