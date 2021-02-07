@@ -14,7 +14,6 @@ permalink: real-estate-price-estimation
 
 * Motivation
 * Methodology followed
-
 	- Data Collection Strategy
 	- Handling bad data
 	- Handling missing data
@@ -23,7 +22,6 @@ permalink: real-estate-price-estimation
 	- Modelling
 	- Deployment
 	- Model Retraining Strategy
-
 * Conclusion
 
 ## Motivation to do this project
