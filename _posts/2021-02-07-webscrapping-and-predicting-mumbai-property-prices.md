@@ -176,5 +176,11 @@ I have developed this "Property Price Estimation" web app for Mumbai based prope
 
 * My intership of 4 months at Sunteck Realty gave me enough domain knowledge to handle certain features and have a strong grip over what I was doing since I was able to understand most of the real estate terminologies like carpet area, super area, loading, RERA etc. I also had descent knowledge on the prices of houses in area's where Sunteck has their projects since all of us interns had shared this information about the projects with each other. 
 
+* You can also check out this 
+<a style = "text-align: center" target="_blank" href = "https://github.com/tejasmohanayyar/webscrapping-and-predicting-mumbai-property-prices"> Project on github </a> and also the <a style = "text-align: center" target="_blank" href = "https://mumbai-property-price.herokuapp.com/">Web app</a>. 
+
+Thank You for reading.
+
+
 
 
