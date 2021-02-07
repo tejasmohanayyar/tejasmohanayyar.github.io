@@ -133,7 +133,7 @@ I have developed this "Property Price Estimation" web app for Mumbai based prope
 7. Gini Index determines which stump will come first. Each stump is made of one feature. Lower gini index means feature will be the first stump.
 8. Total error = Sum of weights of correctly classified samples. (0-1). Lower is better.
 9. Amount of say (alpha):
-![image.png](attachment:image.png)
+<img src = "https://blog.paperspace.com/content/images/2019/11/image-52.png">
 
 10. **In below diagram negative means it will reverse the classification output to make the incorrect classification correct. If error is 0.5, amount of say is 0.**
 
