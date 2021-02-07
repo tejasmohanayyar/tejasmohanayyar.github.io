@@ -7,7 +7,7 @@ metatitle: data science projects
 
 |<a href = "https://tejasmohanayyar.github.io/mask-detection" id = "postlink" target = "_blank">Face Mask Detection TFOD and Faster-RCNN.</a>|<a href = "https://tejasmohanayyar.github.io/ppe-detection" id = "postlink" target = "_blank">Personal Protective Equipment Detection using TFOD and Faster-RCNN.</a>|
 |---|---|
-|<img src="images/mask detection/maskdetectiondemo.gif" width="auto" height="auto" />|<img src="images/ppe detection/3.png"/>|
+|<img src="images/mask detection/maskdetectiondemo.gif" width="auto" height="auto" />|<img src="images/PPE detection/3.png"/>|
 |This project uses the TFOD API built by google's tensorflow team and faster-RCNN to detect whether a person is wearing a mask or not. Read more to find out about faster-rcnn and the specifications of the project.|This project uses the TFOD API built by google's tensorflow team and faster-RCNN to detect whether a person is wearing personal protective equipment or not. Read more to find out about faster-rcnn and the specifications of the project.|
 
 # ML Projects
@@ -37,6 +37,8 @@ metatitle: data science projects
 |---|---|
 |<img  id = "post-image" src = "/images/EDA_Images/output_55_1.png">|<img id = "post-image" src = "/images/EDA_Images/fitbit.png">|
 |Zomato is an online delivery company that acts as a medium to connect many customers and restaurants. Here we are trying to figure out the factors affecting the establishment of various restraurants across bengaluru and are trying to predict the kind of rating a restraurant is likely to receive based on various factors.|Fitness bands often collect a lot of data of each user with respect to their day to day activities. We are lookking at some of the parameters collected from a FitBit of a user to tell us a liitle more about their daily activity and show the user how they can improve their routines and where they are lacking.|
+
+More EDA projects [here](https://github.com/tejasmohanayyar/Exploratory-data-analysis-projects)
 
 # Tableau Projects
 
