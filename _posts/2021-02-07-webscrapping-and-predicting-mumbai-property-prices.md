@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Property Price Estimation using Webscrapping and Machine Learning with Heroku deployment.
-excerpt: "Price estimation of properties inn Mumbai using machine learning, webscrapping, bootstrap framework and deployment."
+excerpt: "Price estimation of properties in Mumbai using machine learning, webscrapping, bootstrap framework and deployment."
 image: https://tejasmohanayyar.github.io/images/real%20estate/realestatedeployed.gif
 permalink: real-estate-price-estimation
 ---
