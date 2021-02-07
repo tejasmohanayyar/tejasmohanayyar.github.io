@@ -97,12 +97,12 @@ I have developed this "Property Price Estimation" web app for Mumbai based prope
 
 ### Exploratory Data Analysis
 
-* **Univariate Analysis:
+* **Univariate Analysis:**
 	- Looking at the distributions of all numerical features I observed that area,total_floors,flat_floor_no and price of property were all skewed. Applying log transformation to these columns reduced the skewness significantly making the data more normally distributed. The same imputations are also done to data entered by users and exponent of prediction is taken since our target is predicted on the log scale.
 
 	- Created normalized count plots for each categorical variable to check how many records are present in each category.
 
-* **Bivariate Analysis:
+* **Bivariate Analysis:**
 
 	- Created boxplots to determine how the price or target variable is distributed across each category with each categorical feature. While there were some price outliers within each category, I was not going to drop any values since I was going to take a log transformation anyway. However it is advised to try to get rid of any outlier using maybe the IQR method.
 
