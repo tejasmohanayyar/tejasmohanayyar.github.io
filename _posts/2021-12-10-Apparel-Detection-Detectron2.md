@@ -16,7 +16,12 @@ permalink: apparel-detection-detectron2
 
 ## Introduction to Detectron2
 
+Detectron 2 is an image detection API built by Facebook over the mask-RCNN model. The idea is to detect a mask over a class rather than just a bounding box as is done with TFOD. 
+
 ## About Masked-RCNN
+
+Masked-RCNN
+
 
 ## Specfications of the project
 
