@@ -143,7 +143,7 @@ I have developed this "Property Price Estimation" web app for Mumbai based prope
 
 12. Next we will decrease the sample weights = sample weight * e^-amount of say. This is done to improve performance.
 
-<img width= "40px" height:"auto" src = "https://www.kdnuggets.com/wp-content/uploads/ajeeth-adaboost-10.jpg">
+<img width= "40px" height = "auto" src = "https://www.kdnuggets.com/wp-content/uploads/ajeeth-adaboost-10.jpg">
 
 13. After we have found the sample weight we will make this the new weights for the correct and incorrect classifications and normalize them. These weights will now be used for the next stump. To create a new collection of samples and get rid of the old samples.
 14. Adaboost seems to reduce overfitting when compared to decision trees and increases overall accuracy compared to RandomForest.
