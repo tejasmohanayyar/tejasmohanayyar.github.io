@@ -14,7 +14,7 @@ metatitle: data science projects
 
 |<a href = "https://tejasmohanayyar.github.io/real-estate-price-estimation" id = "postlink" target = "_blank">Property Price Estimation using Webscrapping and Machine Learning with Heroku deployment.</a>|<a href = "https://tejasmohanayyar.github.io/stock-market-articles-sentiment-analysis" id = "postlink" target = "_blank">Stock Market Articles Sentiment Analysis using NLP,MongoDB and Unsupervised Machine Learning.</a>|
 |---|---|
-|<img src="images/real estate/realestatedeployed.gif"/>|<img src="images/Stock/title_img.png"/>|
+|<img src="images/real estate/realestatedeployed.gif"/>|<img src="images/Stock/Overall Sentiment.png"/>|
 |Complete end to end project of predicting property prices in Mumbai from Scrapping data, feature engineering, Visualization, model creation and deployment|This project uses webscrapping, various NLP techniques and TF-IDF to determine the positive or negative sentiment of articles scrapped from a certain website.|
 
 # Neural Network Projects
