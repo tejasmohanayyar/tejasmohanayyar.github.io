@@ -15,7 +15,8 @@ permalink: stock-market-articles-sentiment-analysis
 * Motivation
 * Methodology followed
 	- Data Collection Strategy
-	- Handling bad data
+	- Webscrapping issues and challenges
+	- NLP Preprocessing
 	- Handling missing data
 	- Unsupervised Machine Learning
 * Conclusion
@@ -60,9 +61,7 @@ After performing the above two analysis and picking your basket of stocks, it is
 
 * I in no way encourage people to do webscrapping and understand that the hosts server faces the load. Hence I am safely scrapping 40-50 records every 2-3 days to ensure I am not bombarding the hosts system.
 
-### Handling Bad Data
-
-**Webscrapping issues and challenges:**
+### Webscrapping issues and challenges
 
 * The economic times loads more articles as we scroll which is why I could not use requests since it does not give us page movement features. 
 
