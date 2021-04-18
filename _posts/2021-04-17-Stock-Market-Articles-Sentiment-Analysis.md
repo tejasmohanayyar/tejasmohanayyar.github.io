@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stock-Market Articles Sentiment Analysis using NLP and MongoDB .
+title: Stock Market Articles Sentiment Analysis using NLP and MongoDB.
 excerpt: "Checking market sentiments from Feb 12th to Mar 13th."
 vertical: Code
 permalink: stock-market-articles-sentiment-analysis
@@ -17,7 +17,7 @@ permalink: stock-market-articles-sentiment-analysis
 	- Data Collection Strategy
 	- Handling bad data
 	- Handling missing data
-	- Modelling
+	- Unsupervised Machine Learning
 * Conclusion
 
 ## Motivation to do this project
@@ -54,7 +54,9 @@ After performing the above two analysis and picking your basket of stocks, it is
  - Article Summary
  - Article URL
 
-* From the article url using requests, I am accessing each article page and scrapping data from each article. 
+* From the article url using **requests**, I am accessing each article page and scrapping data from each article. 
+
+* Finally the data was stored on my local MongoDB database.
 
 * I in no way encourage people to do webscrapping and understand that the hosts server faces the load. Hence I am safely scrapping 40-50 records every 2-3 days to ensure I am not bombarding the hosts system.
 
@@ -66,19 +68,28 @@ After performing the above two analysis and picking your basket of stocks, it is
 
 * To load more news articles, the "load more articles" button is to be pressed and is located after all articles. For this I had to first center that button on the screen and then press the button. All of this was done in code.
 
+* Time taken to scrap close to 1440 articles was 45 mins.
+
 * Scrapped data was saved in a MongoDB database in my local system for future use.
 
 ### NLP Preprocessing
 
 **Libraries Used**
-* NLTK
-* re
-* string
+* **NLTK** Used this library to remove stop words and numbers.
+* **String** Used this library for removing punctuations.
+
 
 * NLP Preprocessing like converting articles to lowercase, replacing percentage, removing_punctuations, removing_stop_words and removing_numbers all took time to process since these are big articles over which we are applying all these transformations.
 
 * Lemmatization was done for the words in articles to increase more words being common among the articles. The advantage of lemmatization is that it preserves the meaning of the word as opposed to stemming which would chop of words without looking at whether the obtained new word is part of the origin language or not.
+ 
 
+**Techniques tried but not used in model**
+
+* **Chunking**: Grouping words with similar POS tags into lists of lists.
+* **Name Entity Recognition**: Recognizes any names mentioned in articles. Does not work very well with Indian names.
+* **POS Tagging**: There are 8 parts of speech in the english language and using POS tagging we can attach a tag to each word.
+* **n-gram**: Grouping n-words together.
 
 ### Handling Missing Data
 
@@ -94,22 +105,70 @@ After performing the above two analysis and picking your basket of stocks, it is
 
 For converting the articles into number form, I manually converted the articles into numbers using the TF-IDF methodology. For better understanding I have written code for the same from scratch.
 
-<Make changes from here>
-##########################################################################################################################################################
+**TF** or Term Frequency calculates the probability of occurence of a word within a sentence or article.
+
+**IDF** or Inverse Document Frequency would determine the actual importance of the word. It is the log of the total number of documents upon the number of documents that have the keyword.
+
 
 ### Unsupervised Machine Learning
 
+**USL techniques used**
 
+* PCA (Principle Component Analysis)
+* KMeans
+* Agglomerative Clustering
+
+#### PCA
+
+<img src = "https://miro.medium.com/max/1556/1*T7CqlFV5aRm6MxO5nJt7Qw.gif" height = 300px>
+
+PCA is a dimensionality reduction technique which combines highly correlated features with each other by plotting the features on hyperplanes. This reduces the number of features present in the dataset. I am using PCA here since we are getting more than 40 features after applying TF-IDF on the articles. PCA would get rid of the extra dimensions while preserving 95% of overall variance in the dataset.
+
+The variance is determined by using the explained variance ratio after applying PCA for the first time.
+
+#### KMeans
+
+**WCV** (within cluster variation)  was used to figure out the number of appropriate clusters present in the dataset. Co-incidently we got 2 clusters present in the dataset which falls in line with determining whether an article is positive or negative. 
+
+<img src = "images/stock/wcv.png" width = "auto" height = "auto">
+
+
+I created cclusters using 2 as the number of clusters and added it as a target feature to the TF-IDF dataset.
+
+#### Agglomerative Clustering
+
+Since Agglomerative Clustering is a bottom up approach, we use the **Dendrogram** to figure out which are the optimum number of clusters as can be seen in the below image.
+
+<img src = "images/stock/dendrogram.png" width = "auto" height = "auto">
+
+### Labling the created clusters
+
+I have relabled the obtained clusters as positive and negative by looking at the articles present within each class. The labels are positive for the positive article and negative for the negative articles.
+
+Example of a positive article:
+
+<img src = "images/stock/Positive News.PNG" width = "auto" height = "auto">
+
+Example of a negative article:
+
+<img src = "images/stock/Negative news example.PNG" width = "auto" height = "auto">
 
 ## Conclusion
 
-* I got hands-on experience in webscrapping, EDA, Feature Engineering, Feature Selection, ML model building, pandas, numpy, Bootstrap 4, Flask, git, stats, object oriented programming, versioning of files and keeping each version, geocoding location data, creating seperate html files and calling them from flask, pycharm, json, pickle and joblib for saving models,scikit-learn, xgboost, cross validation, grid search CV.
+**We can look at the price fluctuations of nifty for the same time period as our dataset.**
 
-* My intership of 4 months at Sunteck Realty gave me enough domain knowledge to handle certain features and have a strong grip over what I was doing since I was able to understand most of the real estate terminologies like carpet area, super area, loading, RERA etc. I also had descent knowledge on the prices of houses in area's where Sunteck has their projects since all of us interns had shared this information about the projects with each other. 
+<img src = "images/stock/Nifty price fluctuations.png" width = "auto" height = "auto">
 
-* You can also check out this 
-<a style = "text-align: center" target="_blank" href = "https://github.com/tejasmohanayyar/webscrapping-and-predicting-mumbai-property-prices"> Project on github </a> and also the <a style = "text-align: center" target="_blank" href = "https://mumbai-property-price.herokuapp.com/">Web app</a>. 
+The above image is a graph of the nifty prices from Feb to March. We see extreme volatility in the price of nifty as is expected in the stock market. Another reason is that this price trend is occuring after a post-corona major bull run which the market had seen post the March 2020 market crash. Volatility is to be expected since investors are treding with caution during this time since Nifty was at its all time high during this time. 
 
+**Sentiments we captured in our dataset**
+
+<img src = "images/stock/Overall Sentiment.png" width = "auto" height = "auto">
+
+Our dataset however primarily shows positive articles with few negative articles as well. Positive news is to be expected during this time since the number of cases for COVID were going down and businesses were starting to generate more business during this time. 
+
+You can also check out this 
+<a style = "text-align: center" target="_blank" href = "https://github.com/tejasmohanayyar/Stock-Market-Articles-Sentiment-Analysis-NLP-MongoDB"> Project on github.</a> 
 Thank You for reading.
 
 
