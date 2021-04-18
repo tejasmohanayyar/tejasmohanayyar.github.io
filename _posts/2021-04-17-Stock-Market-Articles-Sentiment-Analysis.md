@@ -6,7 +6,7 @@ vertical: Code
 permalink: stock-market-articles-sentiment-analysis
 ---
 
-<img src="images/stock/title_img.png" width="auto" height="auto" />
+<img src="images/Stock/title_img.png" width="auto" height="auto" />
 
 <center><a style = "text-align: center" target="_blank" href = "https://github.com/tejasmohanayyar/Stock-Market-Articles-Sentiment-Analysis-NLP-MongoDB"> Project on github </a> </center>
 
@@ -99,7 +99,7 @@ After performing the above two analysis and picking your basket of stocks, it is
 
 * **Visualization of the most frequently occuring words was done**
 
-<img src="images/stock/freq.png" width="auto" height="auto" />
+<img src="images/Stock/freq.png" width="auto" height="auto" />
 
 ### TF-IDF
 
@@ -130,7 +130,7 @@ The variance is determined by using the explained variance ratio after applying 
 
 **WCV** (within cluster variation)  was used to figure out the number of appropriate clusters present in the dataset. Co-incidently we got 2 clusters present in the dataset which falls in line with determining whether an article is positive or negative. 
 
-<img src = "images/stock/wcv.png" width = "auto" height = "auto">
+<img src = "images/Stock/wcv.png" width = "auto" height = "auto">
 
 
 I created cclusters using 2 as the number of clusters and added it as a target feature to the TF-IDF dataset.
@@ -139,7 +139,7 @@ I created cclusters using 2 as the number of clusters and added it as a target f
 
 Since Agglomerative Clustering is a bottom up approach, we use the **Dendrogram** to figure out which are the optimum number of clusters as can be seen in the below image.
 
-<img src = "images/stock/dendrogram.png" width = "auto" height = "auto">
+<img src = "images/Stock/dendrogram.png" width = "auto" height = "auto">
 
 ### Labling the created clusters
 
@@ -147,23 +147,23 @@ I have relabled the obtained clusters as positive and negative by looking at the
 
 Example of a positive article:
 
-<img src = "images/stock/Positive News.PNG" width = "auto" height = "auto">
+<img src = "images/Stock/Positive News.PNG" width = "auto" height = "auto">
 
 Example of a negative article:
 
-<img src = "images/stock/Negative news example.PNG" width = "auto" height = "auto">
+<img src = "images/Stock/Negative news example.PNG" width = "auto" height = "auto">
 
 ## Conclusion
 
 **We can look at the price fluctuations of nifty for the same time period as our dataset.**
 
-<img src = "images/stock/Nifty price fluctuations.png" width = "auto" height = "auto">
+<img src = "images/Stock/Nifty price fluctuations.png" width = "auto" height = "auto">
 
 The above image is a graph of the nifty prices from Feb to March. We see extreme volatility in the price of nifty as is expected in the stock market. Another reason is that this price trend is occuring after a post-corona major bull run which the market had seen post the March 2020 market crash. Volatility is to be expected since investors are treding with caution during this time since Nifty was at its all time high during this time. 
 
 **Sentiments we captured in our dataset**
 
-<img src = "images/stock/Overall Sentiment.png" width = "auto" height = "auto">
+<img src = "images/Stock/Overall Sentiment.png" width = "auto" height = "auto">
 
 Our dataset however primarily shows positive articles with few negative articles as well. Positive news is to be expected during this time since the number of cases for COVID were going down and businesses were starting to generate more business during this time. 
 
